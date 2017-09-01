@@ -9,6 +9,9 @@ is something reasonably ordinary.
 
 ## REFERENCES
 
+Anjana Vakil's talk on Python bytecodes
+https://twitter.com/AnjanaVakil/status/756421996200751104
+
 My original proposal is here:
 https://github.com/drj11/pycon-2017-proposal
 
