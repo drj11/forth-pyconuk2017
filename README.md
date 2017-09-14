@@ -58,7 +58,7 @@ the background and motivation behind some of the design decisions.
 
 ## Moore
 
-find the "discovered" quote.
+find the "discovered" quote.  It's in the FAQ.
 
 ## Syntax
 
