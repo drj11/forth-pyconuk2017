@@ -88,3 +88,35 @@ I've labelled the Code Field Address for a definition
 with its name.
 That means that in both Assembly and Forth
 a definition's name stands for its execution token.
+
+## From ASM to Threaded
+
+Things get simpler and clearer
+when you move from ASM to Forth.
+At least some of the time.
+
+Consider change ecaba958de3c1fb93151d06a829ceb0988a44a3f
+where I replace the ASM implementation of 2SWAP
+with a Threaded implementation.
+At this point in the implementation of SixtyForth
+my own stack skills were getting better.
+And I realised I could replace these 8 assembly language
+statements:
+
+    mov rax, [rbp-32]
+    mov rcx, [rbp-24]
+    mov rdx, [rbp-16]
+    mov rsi, [rbp-8]
+    mov [rbp-32], rdx
+    mov [rbp-24], rsi
+    mov [rbp-16], rax
+    mov [rbp-8], rcx
+
+with this one line of Forth:
+
+    rot >r rot r>
+
+This was an elegant moment.
+However, I couldn't use the Forth implementation,
+as `2SWAP` is used by builtins that are required by
+the interpreter, and so are Threaded themselves.
