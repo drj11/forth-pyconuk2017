@@ -38,6 +38,18 @@ Moore was programming on an IBM 1130 at the time,
 and the disk system restricted names to 5 upper-case characters.
 Hence FORTH F-O-R-T-H was born. [RATHER1993]
 
+## The Key Implementation Ideas
+
+Words are reduced to an execution token (which is a cell).
+
+The execution token is the Code Field Address.
+
+The Code Field contains the address of machine code.
+
+Immediately following the Code Field is the body.
+
+Scanning source input is as simple as possible.
+
 
 ## Loeliger
 
