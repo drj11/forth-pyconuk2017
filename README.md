@@ -132,3 +132,28 @@ This was an elegant moment.
 However, I couldn't use the Forth implementation,
 as `2SWAP` is used by builtins that are required by
 the interpreter, and so are Threaded themselves.
+
+## What's Core?
+
+- data stack: DUP DROP SWAP
+- return stack: >R R> R@ 2>R
+- comparison: 0= 0 0< < U<
+- flow: BRANCH, 0BRANCH, EXIT
+- memory: @ ! CMOVE
+- bitwise: INVERT XOR OR AND BIC
+- arithmetic: + - 1+
+- dictionary:
+- compiler:
+
+
+## Coroutines
+
+This is hilarious.
+A non-recursive single coroutine can be implemented with:
+
+    : co 2r> swap 2>r ;
+
+Implementation:
+https://github.com/jeelabs/embello/blob/master/explore/1608-forth/hmv/d#L104
+
+As pointed out by Wippler https://jeelabs.org/article/1612b/
