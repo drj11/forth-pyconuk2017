@@ -142,6 +142,7 @@ the interpreter, and so are Threaded themselves.
 - memory: @ ! CMOVE
 - bitwise: INVERT XOR OR AND BIC
 - arithmetic: + - 1+
+- IO:
 - dictionary:
 - compiler:
 
