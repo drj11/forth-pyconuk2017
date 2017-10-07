@@ -158,3 +158,18 @@ Implementation:
 https://github.com/jeelabs/embello/blob/master/explore/1608-forth/hmv/d#L104
 
 As pointed out by Wippler https://jeelabs.org/article/1612b/
+
+## Surprises
+
+Surprised that the Linux `SYSCALL` ABI trashes the RCX register
+on return.
+
+Annoyingly difficult to work out what size the buffer for the
+TCGETS IOCTL should be.
+
+I had forgotten the terrible Direction Flag in Intel
+architecture.
+
+I was pleasantly surprised by the accuracy and comprehensiveness
+of the Stack Overflow answer to my first (and so far only)
+Stack Overflow question.
