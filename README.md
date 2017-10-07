@@ -38,6 +38,18 @@ Moore was programming on an IBM 1130 at the time,
 and the disk system restricted names to 5 upper-case characters.
 Hence FORTH F-O-R-T-H was born. [RATHER1993]
 
+
+## Forth Versions
+
+Language versions, a favourite topic at PyConUK.
+
+Who is using Modern ANSI Forth 2004?
+
+Who is using the much-maligned Forth-83 standard?
+
+And who is using the venerable Forth-79?
+
+
 ## The Key Implementation Ideas
 
 Words are reduced to an execution token (which is a cell).
