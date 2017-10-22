@@ -1,4 +1,46 @@
-##
+## Outline
+
+- Forth intro
+- new definitions
+- what is a computer
+- brief 64-bit Intel overview
+- a threaded interpreter
+- abstract model, W, I
+- concrete model
+- implementation in assembler
+- operating system image loading
+- forth in forth
+
+
+
+## A brief introduction to Forth
+
+If we want to add two numbers, we use PLUS.
+But in Forth, the numbers we want to add have to have already
+been computed, so they come first:
+
+    5 20 +
+
+If you try this, you don't see any answer.
+To see the answer, we can print a number using DOT.
+
+    5 20 + .
+
+In Forth PLUS and DOT are called WORDs.
+WORDs are the things that actually do something.
+Syntactically a WORD has a name,
+and its name is any sequence of non-space characters.
+Spaces (generally, any white space) is required to separate the
+WORDs of a Forth program.
+
+What's happening here is that Forth uses a stack, called the
+Data Stack.
+Most WORDs do something with the Data Stack.
+PLUS takes two items off the top of the stack,
+and replaces them with their sum.
+So overall the stack shrinks by one item.
+
+## Definitions and Threaded Interpreters
 
 To define new words in Forth,
 which correspond to subroutines or functions in other languages,
