@@ -185,3 +185,8 @@ architecture.
 I was pleasantly surprised by the accuracy and comprehensiveness
 of the Stack Overflow answer to my first (and so far only)
 Stack Overflow question.
+
+Following a tutorial really makes you implement things,
+and not push them down the line.
+If the tutorial calls for ?DO or +LOOP to work,
+then they really have to work.
