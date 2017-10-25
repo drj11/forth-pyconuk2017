@@ -60,6 +60,9 @@ The Code Field contains the address of machine code.
 
 Immediately following the Code Field is the body.
 
+For ordinary words defined in Forth,
+the body is a vector of execution tokens.
+
 Scanning source input is as simple as possible.
 
 
