@@ -33,12 +33,16 @@ and its name is any sequence of non-space characters.
 Spaces (generally, any white space) is required to separate the
 WORDs of a Forth program.
 
-What's happening here is that Forth uses a stack, called the
-Data Stack.
+What's happening here is that Forth uses a stack,
+called the Data Stack.
 Most WORDs do something with the Data Stack.
 PLUS takes two items off the top of the stack,
 and replaces them with their sum.
 So overall the stack shrinks by one item.
+
+The numbers that we used above are different from WORDs,
+when the interpreter sees a number,
+it pushes the value of the number onto the stack.
 
 ## Definitions and Threaded Interpreters
 
@@ -53,6 +57,16 @@ This is an example of how we define a new word called SQUARE.
 When we execute SQUARE it has the same effect as if its body
 had been executed.
 The word SEMICOLON ends the definition.
+
+So the sequence
+
+    5 square .
+
+(which will print 25)
+
+has the same effect as the sequence
+
+    5 dup * .
 
 Note how the definition of square doesn't include any parameter
 definitions, and there are no return statements.
@@ -72,7 +86,22 @@ or syntax.
 
 At the keyboard, we can immediately use this new definition.
 
-    7 square .
+    5 square .
+
+Note that `square` leaves its result on the stack,
+like all Forth WORDs really.
+
+If we want to square something twice, we can just call it twice:
+
+    5 square square
+    .
+
+Can we see what's going on halfway through?
+You have to be careful if you debug using `.`.
+. consumes a stack item, so you often need to prefix it with
+DUP:
+
+    5 square  dup .  square
 
 And of course we can use this newly defined word in a further
 new definition:
@@ -95,13 +124,31 @@ that tells CUBE where to resume when SQUARE has finished.
 Similarly, when SQUARE calls DUP, there has to be a marker that
 tells SQUARE to resume when DUP has finished.
 
+The definition of CUBE is a model for the process that occurs
+when CUBE is called.
+This process is fairly simple, the process is to call DUP, them
+call SQUARE, then call STAR.
+
+When SQUARE is called from CUBE,
+the process of executing CUBE is temporarily suspended,
+and a process to execute SQUARE starts.
+When that process completes, we say SQUARE returns,
+and the execution of CUBE resumes.
+
+Suspending the execution of CUBE corresponds to remembering,
+somewhere, where in the process we are, so we know what to do
+when we resume.
+
+This piece of information, where to resume when you are done,
+is called Subroutine Linkage.
+
 Another way of thinking about this is to consider the word DUP.
 In this example, DUP is called from both SQUARE and CUBE.
 When DUP is called and is finished, there has to be something
 that tells us where to resume execution.
-
-This piece of information, where to resume when you are done,
-is called Subroutine Linkage.
+And, because DUP can be called from either SQUARE or CUBE,
+or indeed, any new definition, that piece of information,
+where to resume, has to be some sort of variable.
 
 In this implementation of Forth,
 I put this information on a Return Stack.
@@ -122,9 +169,13 @@ When a word finishes, when it reaches the SEMICOLON,
 it pops the token off the Return Stack and resume execution at
 that point.
 
-This is quite an abstract model.
+## This is quite an abstract model.
 
-Let's make it more concrete.
+It is an effective model.
+We can use it to describe behaviour and to reason about behaviour,
+but if we want to implement the language, we'll need to get a
+bit more concrete.
+
 There are many ways to realise this model, but one of the
 simplest is to use a threaded interpreter.
 Again, this is a very common way to implement Forth,
