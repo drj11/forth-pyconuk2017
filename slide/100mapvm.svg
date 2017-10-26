@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1600"
+   height="1200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="100mapvm.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.71666667"
+     inkscape:cx="800"
+     inkscape:cy="600"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1696"
+     inkscape:window-height="1007"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,147.63782)">
+    <text
+       xml:space="preserve"
+       style="font-size:96px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="191.828"
+       y="-6.3578186"
+       id="text3258"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3260"
+         x="191.828"
+         y="-6.3578186">modelling the Forth VM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="258.13953"
+       y="378.13953"
+       id="text5400"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-147.63782)"><tspan
+         sodipodi:role="line"
+         id="tspan5402"
+         x="258.13953"
+         y="378.13953" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="203.72095"
+       y="263.99008"
+       id="text5404"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5406"
+         x="203.72095"
+         y="263.99008" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="204.41194"
+       y="277.03949"
+       id="text4042"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4044"
+         x="204.41194"
+         y="277.03949"><tspan
+   style="font-weight:bold"
+   id="tspan4997">R</tspan> Return Stack Pointer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="203.51595"
+       y="157.54951"
+       id="text4841"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4843"
+         x="203.51595"
+         y="157.54951"><tspan
+   style="font-weight:bold"
+   id="tspan4995">S</tspan> Data Stack Pointer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="203.38794"
+       y="396.52954"
+       id="text4845"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4847"
+         x="203.38794"
+         y="396.52954"><tspan
+   style="font-weight:bold"
+   id="tspan4999">I</tspan> Instruction Pointer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="203.89995"
+       y="516.01953"
+       id="text4938"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4940"
+         x="203.89995"
+         y="516.01953"><tspan
+   style="font-weight:bold"
+   id="tspan5001">W</tspan> Word Pointer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="1202.093"
+       y="157.54951"
+       id="text5642"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5644"
+         x="1202.093"
+         y="157.54951">RBP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="1202.093"
+       y="277.03952"
+       id="text5646"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5648"
+         x="1202.093"
+         y="277.03952">R12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="1202.093"
+       y="396.52954"
+       id="text5650"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5652"
+         x="1202.093"
+         y="396.52954">RBX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="1202.093"
+       y="516.01953"
+       id="text5654"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5656"
+         x="1202.093"
+         y="516.01953">RDX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="202.74796"
+       y="654.31567"
+       id="text5658"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan5660"
+         x="202.74796"
+         y="654.31567">Mostly avoiding the 6 registers</tspan><tspan
+         sodipodi:role="line"
+         x="202.74796"
+         y="718.31567"
+         id="tspan5662">used by Linux SYSCALL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="281.27594"
+       y="796.82733"
+       id="text5664"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5666"
+         x="281.27594"
+         y="796.82733">RDI RSI RDX R10 R8 R9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="200.3033"
+       y="875.15283"
+       id="text5668"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5670"
+         x="200.3033"
+         y="875.15283">and the two trashed by SYSCALL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="281.27594"
+       y="959.24597"
+       id="text5672"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5674"
+         x="281.27594"
+         y="959.24597">RCX R11</tspan></text>
+  </g>
+</svg>
