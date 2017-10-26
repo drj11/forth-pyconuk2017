@@ -12,7 +12,7 @@
 - operating system image loading
 - forth in forth
 
-## I, David Jones
+## 000 I, David Jones
 
 
 Thank you for this opportunity to speak to you.
@@ -32,8 +32,51 @@ John passed away in 2015, and
 I am very pleased that we carry on his legacy by meeting in
 conference.
 
+## 010 In the beginning
+
+I've probably had this urge for a long time,
+but it was August 2016 when I tweeted it.
+I was first exposed to Forth in the 1980s on an 8-bit micro.
+I can't remember if it was the ZX81 or the ZX Spectrum,
+but they both had typical Forth implementations of the era.
+
+A friend suggested I buy this classic text on the right,
+which is secretly a book about implementing Forth.
+If you were here last year, you may have spotted me carrying the book.
+It's great for starting conversations.
+
+Loeliger's book is about implementing a Forth-like language
+on the Z80 CPU, an 8-bit CPU that was very popular in the 1980s.
+
+
+## 015 The URLs
+
+My implementation, called SixtyForth,
+follows the same pattern as Loeliger's but I'm
+implementing it on a 64-bit Intel CPU architecture.
+
+If you do an internet search for `sixtyforth`, then,
+depending which search engine you use,
+it either
+suggests you have mispelt an extremely short musical note
+or ranks someone else's fork higher.
+So add my github id for now, which is drj11
+
 
 ## A brief introduction to Forth
+
+Let's look at Forth.
+
+It's interactive, and in a similar fashion to Python, has
+a read evaluate loop.
+
+Forth prints "ok" when it has successfully executed
+all of the input.
+Note that the "ok" typically appears on the same line
+as the input, and is followed by a newline
+(the reverse of the Python prompt convention).
+A lot of what seems weird to us now in 2017
+was already a Forth tradition with a 10 year legacy in 1980.
 
 If we want to add two numbers, we use PLUS.
 But in Forth, the numbers we want to add have to have already
