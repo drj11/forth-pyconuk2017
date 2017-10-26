@@ -9,7 +9,7 @@ Aim for about 20 slides
 - The Stack
 - 040 Executing CUBE, : cube  dup square * ;
 - execution tokens, in Forth, interactively
-- A typical compiled, threaded, word
+- 060 A typical compiled, threaded, word
 - The "Forth VM"
 - An abstract computer
 - (a simple model of) the intel-64 architecture
@@ -19,9 +19,9 @@ Aim for about 20 slides
 - What else? OS, IO, interactive
 - Small; Sufficient; Implementable; Extensible (README)
 - Future Bootstrap, The dependencies
-- Surprises (README)
+- 800 Surprises (README)
 - Who uses Forth?
 - Gems (WITHIN, pronunciation, ...)
-- Further reading
+- 900 Further reading
 
 
