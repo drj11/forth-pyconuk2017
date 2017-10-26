@@ -9,8 +9,8 @@ Aim for about 20 slides
 - The Stack
 - 040 Executing CUBE, : cube  dup square * ;
 - execution tokens, in Forth, interactively
-- The "Forth VM"
 - A typical compiled, threaded, word
+- The "Forth VM"
 - An abstract computer
 - (a simple model of) the intel-64 architecture
 - Mapping the Forth machine to Intel-64
