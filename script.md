@@ -1,5 +1,6 @@
 ## Outline
 
+- intro to talk
 - Forth intro
 - new definitions
 - what is a computer
@@ -11,6 +12,25 @@
 - operating system image loading
 - forth in forth
 
+## I, David Jones
+
+
+Thank you for this opportunity to speak to you.
+It is an honour and a privilege to be here.
+
+My name is David Jones and I'm here to tell you a little bit
+about a Forth implementation.
+
+Before that I'd like to give thanks to
+and remember John Pinner.
+My first public talk was 10 years ago,
+and it was at the first PyConUK back in 2007.
+John Pinner had organised it,
+and I met him at the Birmingham Conservatoire
+about 10 minutes before the talk I gave there.
+John passed away in 2015, and
+I am very pleased that we carry on his legacy by meeting in
+conference.
 
 
 ## A brief introduction to Forth
