@@ -286,3 +286,75 @@ performs the equivalent of DUP.
 As is traditional, this implementation puts that machine code in
 the Data Field of the word.
 Otherwise the Data Field of primitives is unused.
+
+## 110 layers
+
+The current implementation consists of
+an assembly file, and a Forth file.
+These are combined into
+a single Linux binary by NASM and the linker tools.
+
+Some of the code is in assembly language.
+
+Some of the code is in a compiled threaded form.
+
+Some of the code is in Forth.
+
+Let's have a look now at 64th.asm
+
+PLUS: there is some noise at the top,
+which is part of the Forth dictionary that
+enables Forth to translate names into execution tokens.
+In assembly the execution tokens are these labels on the left.
+PLUS in this case.
+This is pretty typical for a Forth word implemented in assembly.
+It begins by copying data from the stack,
+to the the CPU registers,
+performs the add,
+then adjusts the stack,
+which is now smaller because we removed two items and pushed one,
+then writes the result back to the stack.
+Almost all of these Forth primitives end with a jump to next.
+
+Threaded Code is the compiled form of Forth code.
+Ideally in would be written in Forth,
+but until we implement the Forth interpreter,
+we can't write them in Forth.
+There is nothing to interpret them.
+So any words used in the implementation of the interpreter
+have to be either in Assembly or already compiled into threaded
+code.
+
+greaterthan is a good example.
+A is greater than B is equivalent to saying
+B is less then A.
+lessthan is already defined, in Assembler as it happens,
+so we can define greaterthan in terms of lessthan.
+This has a really simple definition in Forth,
+but because the implementation of the interpreter needs it,
+we have to write it in Threaded Code.
+
+How do threaded words get executed?
+Let's look at next, stdexe, and EXIT
+
+Forth in Forth
+
+open rc.4
+The definition of `2drop` is fairly typical.
+`2drop` drops the top two items on the stack,
+so we can have a simple implementation that calls DROP twice.
+This definition is completely portable and will work on any
+compliant Forth system.
+
+The next word to be defined, is bit of strange one.
+It is backslash, and it is a word that implements comments.
+This scans the input until it finds a linefeed character,
+then throws away, using 2DROP, that part of the input.
+That what comments in source code are:
+the bits that the computer throws away.
+The 10 here, is the numeric code for a linefeed character.
+This is the ASCII code for linefeed,
+which is the line ending character on Unix.
+So this definition in Forth is only useful on Unix systems.
+A different definition would be required for Windows.
+
