@@ -207,7 +207,30 @@ result. Which is still on the stack.
     .
 
 
-##
+## Let's look at the definition of CUBE again
+
+A word is split into a Code Field and a Data Field
+(traditionally called Parameter Field,
+but the ANSI standard uses Data Field).
+
+The Code Field is a single cell that holds the address of a
+piece of machine code.
+Words like CUBE and SQUARE, defined in Forth,
+all share the same Code Field value,
+the address of a piece of machine code that when executed
+invokes the sequence of execution tokens found in the Data
+Field.
+As implied, the Data Field is the sequence of execution tokens
+corresponding to the body of the definition.
+
+For a primitive word, like DUP,
+the Code Field value is the address of machine code that
+performs the equivalent of DUP.
+As is traditional, this implementation puts that machine code in
+the Data Field of the word.
+Otherwise the Data Field of primitives is unused.
+
+## Execute CUBE
 
 Let's more closely consider what happens when we call CUBE.
 
@@ -235,8 +258,8 @@ When that process completes, we say SQUARE returns,
 and the execution of CUBE resumes.
 
 Suspending the execution of CUBE corresponds to remembering,
-somewhere, where in the process we are, so we know what to do
-when we resume.
+somewhere, where in the process we are,
+so we know what to do when we resume.
 
 This piece of information, where to resume when you are done,
 is called Subroutine Linkage.
@@ -253,8 +276,8 @@ In this implementation of Forth,
 I put this information on a Return Stack.
 This is a very common choice, and encouraged by the language.
 
-We can use a stack, because subroutines have a stack-like
-behaviour.
+We can use a stack,
+because subroutines have a stack-like behaviour.
 After CUBE calls SQUARE, everything about that process is no
 longer required, the answers are already on the Data Stack,
 everything else we can throw away.
@@ -268,60 +291,97 @@ When a word finishes, when it reaches the SEMICOLON,
 it pops the token off the Return Stack and resume execution at
 that point.
 
-## This is quite an abstract model.
+Those tokens i've represented here as CUBE+2 and SQUARE+1
 
-It is an effective model.
-We can use it to describe behaviour and to reason about behaviour,
-but if we want to implement the language, we'll need to get a
-bit more concrete.
+This is quite an abstract model.
 
-There are many ways to realise this model, but one of the
-simplest is to use a threaded interpreter.
-Again, this is a very common way to implement Forth,
-and the language encourages it, but it is far from the only way.
+## Let's have a look at execution tokens
 
-To make our threaded interpreter,
-we need a way to reduce each word in Forth to an Execution Token.
-Each definition then becomes a sequence of Execution Tokens.
-A return token, on the return stack, is the position of the next
-item in the sequence of Execution Tokens.
+In Forth, the word TICK converts from name to execution token.
 
-They're all addresses.
-An Execution Token for a word defined in Forth,
-like SQUARE or CUBE, is an address in memory where the sequence
-of Execution Tokens that correspond to its definition is found.
+    ' dup
+    .
+    ' square
+    .
+    ' cube
+    .
 
-Some words actually have to do something! Like DUP, and TIMES.
-Those words have Execution Tokens that are not the address of a
-sequence of tokens but the address of a piece of machine code
-that when executed has a suitable effect.
+These numbers might seem mysterious, but they are not really.
+They are just addresses, the address of the combiled form of the
+word.
 
-So we need a way of deciding if an execution token is a
-primitive, or corresponds to a word defined in Forth.
+Notice that the execution token for cube is only a little bit
+larger than the execution token for square.
+The difference, 56 bytes, is the amount of memory used by the
+definition of square.
 
-A very traditional and very elegant way to model this is as
-follows:
+Notice that the execution token for DUP is radically smaller.
+The words that are builtin to the implementation are allocated,
+by the operating system, into a different part of the address
+space.
 
-A word is split into a Code Field and a Data Field
-(traditionally called Parameter Field,
-but the ANSI standard uses Data Field).
+## A forth VM
 
-The Code Field is a single cell that holds the address of a
-piece of machine code.
-Words like CUBE and SQUARE, defined in Forth,
-all share the same Code Field value,
-the address of a piece of machine code that when executed
-invokes the sequence of execution tokens found in the Data
-Field.
-As implied, the Data Field is the sequence of execution tokens
-corresponding to the body of the definition.
+The model for a threaded interpreter,
+which is what I use looks like this
 
-For a primitive word, like DUP,
-the Code Field value is the address of machine code that
-performs the equivalent of DUP.
-As is traditional, this implementation puts that machine code in
-the Data Field of the word.
-Otherwise the Data Field of primitives is unused.
+S and R manage the two stacks.
+
+I is a pointer,
+typically it points to somewhere in the middle
+of the word we are executing.
+
+W is the execution token for the word we are executing.
+It's initially used to setup I at the beginning of executing a
+word, but often isn't used after that.
+
+Because i started the implemention of SixtyForth
+before reading Conklin and Rather,
+i have implemented a isomorphic VM, but with different names.
+i apologise.
+
+## A generic computer
+
+To implement this Forth VM,
+we need to translate it to an actual computer.
+Here's a sort of generic computer.
+
+Central Process Unit has a bunch of things inside it.
+There are registers,
+which are really the only thing the CPU knows how to "do
+computation" on.
+The Arithmetic Logic Unit is the thing that actually does
+computation, like additions, multiplies.
+
+Around the edge are units that talk to devices outside the CPU,
+most siginificantly, a Memory Management Unit, that talks to an
+array of memory, and some sort of Input Output unit which talks
+to the slow slow slow mass storage, and network devices.
+
+## Intel-64
+
+This implementation runs on 64-bit Intel CPUs.
+Such as the one in my laptop.
+64-bits which is 8 bytes.
+
+In terms of registers, we have a PC and 16 so-called General
+Purpose registers.
+which are named rAx rBx rCx rDx,
+followed by RSP RSI RBP RDI
+and then of course R8 through to R15
+
+# Modelling the Forth VM
+
+we have enough registers in Intel-64 that we can just assign
+Intel-64 registers to equivalents in the Forth VM.
+These choices represent a combination of what I thought might be
+sensible given my very limited research,
+and registers whose
+name I could remember.
+
+The Linux SYSCALL also uses some General Purpose registers,
+and whilst I could use these, it's simpler not to.
+
 
 ## 110 layers
 
@@ -372,6 +432,8 @@ we have to write it in Threaded Code.
 
 How do threaded words get executed?
 Let's look at next, stdexe, and EXIT
+
+If this seems like magic, it is
 
 Forth in Forth
 
