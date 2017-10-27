@@ -68,6 +68,11 @@ So add my github id for now, which is drj11
 
 Let's look at Forth.
 
+First, let's build it.
+
+    make
+    ./64th
+
 It's interactive, and in a similar fashion to Python, has
 a read evaluate loop.
 
@@ -104,6 +109,25 @@ PLUS takes two items off the top of the stack,
 and replaces them with their sum.
 So overall the stack shrinks by one item.
 
+As a debugging aid, we can use the word `.s`
+to print a sort of picture of the stack.
+
+When .s shows the stack,
+it prints the stack with the top of stack to the right,
+which is the order that would have typed the values in
+if they had been typed in,
+and it's a convention used in most Forth documentation.
+
+There are various words that manipulate the stack,
+DUP, DROP, SWAP.
+We're going to be using DUP, which duplicates items.
+
+    5
+    dup
+    .s
+    *
+    .s
+
 The numbers that we used above are different from WORDs,
 when the interpreter sees a number,
 it pushes the value of the number onto the stack.
@@ -114,6 +138,9 @@ To define new words in Forth,
 which correspond to subroutines or functions in other languages,
 we used a word called COLON, and spelt using the colon
 punctuation character.
+
+So let's say we want to square a number.
+We can do that by duplicating it, then call STAR.
 
     : square  dup *  ;
 
@@ -171,6 +198,14 @@ And of course we can use this newly defined word in a further
 new definition:
 
     : cube  dup square *  ;
+
+    5 cube
+
+Computes the cube of 5, of course we've forgotten to print the
+result. Which is still on the stack.
+
+    .
+
 
 ##
 
