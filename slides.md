@@ -14,11 +14,14 @@ Aim for about 20 slides
 - 080 A generic computer
 - 090 (a simple model of) the intel-64 architecture
 - 100 Mapping the Forth machine to Intel-64
-- 110 Levels, Forth in Asm, Threaded Code in Asm, Forth in Forth (README)
+- 110 Layers, Forth in Asm, Threaded Code in Asm, Forth in Forth (README)
+- open 64th.asm
+- open rc.4
 - 2SWAP anecdote (see README.md)
 - What else? OS, IO, interactive
-- Small; Sufficient; Implementable; Extensible (README)
+- 500 Moore's Discovery: Small; Sufficient; Implementable; Extensible (README)
 - Future Bootstrap, The dependencies
+- 700 factoids
 - 800 Surprises (README)
 - Who uses Forth?
 - Gems (WITHIN, pronunciation, ...)
