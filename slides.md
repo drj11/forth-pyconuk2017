@@ -19,7 +19,8 @@ Aim for about 20 slides
 - open rc.4
 - 2SWAP anecdote (see README.md)
 - What else? OS, IO, interactive
-- 500 Moore's Discovery: Small; Sufficient; Implementable; Extensible (README)
+- 510 key ideas
+- 550 Moore's Discovery: Small; Sufficient; Implementable; Extensible (README)
 - Future Bootstrap, The dependencies
 - 700 factoids
 - 800 Surprises (README)
