@@ -25,6 +25,7 @@ Before that I'd like to give thanks to
 and remember John Pinner.
 My first public talk was 10 years ago,
 and it was at the first PyConUK back in 2007.
+And I have the bag to prove it!
 John Pinner had organised it,
 and I met him at the Birmingham Conservatoire
 about 10 minutes before the talk I gave there.
