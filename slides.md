@@ -7,9 +7,9 @@ Aim for about 20 slides
 - 015 URLs
 - A brief look at Forth (interactively?)
 - The Stack
+- 030 A typical compiled, threaded, word
 - 040 Executing CUBE, : cube  dup square * ;
 - execution tokens, in Forth, interactively
-- 060 A typical compiled, threaded, word
 - 070 The "Forth VM"
 - 080 A generic computer
 - 090 (a simple model of) the intel-64 architecture
