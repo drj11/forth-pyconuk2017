@@ -88,14 +88,14 @@
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
-       x="261.13007"
-       y="862.03662"
+       x="266.71146"
+       y="860.6413"
        id="text2992"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2994"
-         x="261.13007"
-         y="862.03662">CUBE+2</tspan></text>
+         x="266.71146"
+         y="860.6413">CUBE+2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
@@ -107,43 +107,39 @@
          id="tspan2998"
          x="582.46509"
          y="862.03662">SQUARE+1</tspan></text>
-    <g
-       id="g4050"
-       transform="translate(-22.511597,-23.72093)">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3000"
-         y="647.10638"
-         x="280.69766"
-         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
-         xml:space="preserve"><tspan
-           y="647.10638"
-           x="280.69766"
-           id="tspan3002"
-           sodipodi:role="line">5</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
-         x="338.69766"
-         y="647.10638"
-         id="text3004"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan3006"
-           x="338.69766"
-           y="647.10638">5</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text3008"
-         y="647.10638"
-         x="396.69766"
-         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
-         xml:space="preserve"><tspan
-           y="647.10638"
-           x="396.69766"
-           id="tspan3010"
-           sodipodi:role="line">5</tspan></text>
-    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="264.18607"
+       y="623.38544"
+       id="text3000"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3002"
+         x="264.18607"
+         y="623.38544">5</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3004"
+       y="623.38544"
+       x="580.18604"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       xml:space="preserve"><tspan
+         y="623.38544"
+         x="580.18604"
+         id="tspan3006"
+         sodipodi:role="line">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="898.18604"
+       y="623.38544"
+       id="text3008"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3010"
+         x="898.18604"
+         y="623.38544">5</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:96px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
@@ -199,5 +195,33 @@
          x="178.23405"
          id="tspan4048"
          sodipodi:role="line">return stack</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6476"
+       width="315.34885"
+       height="64.186043"
+       x="576.37207"
+       y="813.75751" />
+    <rect
+       y="813.75751"
+       x="260.37207"
+       height="64.186043"
+       width="315.34885"
+       id="rect6478"
+       style="fill:none;stroke:#000000;stroke-width:2.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6480"
+       width="315.34885"
+       height="64.186043"
+       x="260.37207"
+       y="573.75751" />
+    <rect
+       y="573.75751"
+       x="576.37207"
+       height="64.186043"
+       width="315.34885"
+       id="rect6482"
+       style="fill:none;stroke:#000000;stroke-width:2.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
   </g>
 </svg>
