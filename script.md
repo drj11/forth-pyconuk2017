@@ -59,7 +59,7 @@ implementing it on a 64-bit Intel CPU architecture.
 If you do an internet search for `sixtyforth`, then,
 depending which search engine you use,
 it either
-suggests you have mispelt an extremely short musical note
+suggests you have mispelt an extremely short musical note,
 or ranks someone else's fork higher.
 So add my github id for now, which is drj11
 
@@ -99,7 +99,7 @@ In Forth PLUS and DOT are called WORDs.
 WORDs are the things that actually do something.
 Syntactically a WORD has a name,
 and its name is any sequence of non-space characters.
-Spaces (generally, any white space) is required to separate the
+Spaces (generally, any white space) are required to separate the
 WORDs of a Forth program.
 
 What's happening here is that Forth uses a stack,
