@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="005urls.svg">
+   sodipodi:docname="015urls.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -72,7 +72,7 @@
        sodipodi:linespacing="125%"
        transform="translate(0,-147.63782)"><tspan
          sodipodi:role="line"
-         id="tspan4097"></tspan></text>
+         id="tspan4097" /></text>
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
@@ -95,5 +95,16 @@
          id="tspan4105"
          x="125.948"
          y="462.12964">https://github.com/drj11/sixtyforth</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="1433.408"
+       y="945.2262"
+       id="text6490-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6492-6"
+         x="1433.408"
+         y="945.2262">*</tspan></text>
   </g>
 </svg>
