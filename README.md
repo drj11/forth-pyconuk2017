@@ -8,5 +8,8 @@ PyConUK 2017, Cardiff, Wales.
 
 [Slides in PDF](forth-pyconuk2017.pdf)
 
+I have made minor edits to the slides since
+the presentation at PyConUK.
+
 A "script" is available at `script.md`,
 but it is best regarded as aspirational at best.

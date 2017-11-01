@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.71666667"
-     inkscape:cx="800"
+     inkscape:cx="633.95349"
      inkscape:cy="600"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -117,29 +117,7 @@
          sodipodi:role="line"
          id="tspan5982"
          x="197.17201"
-         y="649.10638">drj@pobox.com</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
-       x="193.01201"
-       y="723.05988"
-       id="text5984"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5986"
-         x="193.01201"
-         y="723.05988">@drjtwit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
-       x="195.76401"
-       y="797.01337"
-       id="text5988"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5990"
-         x="195.76401"
-         y="797.01337">github.com/drj11</tspan></text>
+         y="649.10638">pronoun.is/he/him</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot5992"
@@ -150,7 +128,7 @@
            height="266.51163"
            x="440.93024"
            y="650.23254" /></flowRegion><flowPara
-         id="flowPara5998"></flowPara></flowRoot>    <flowRoot
+         id="flowPara5998" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot6000"
        style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Courier 10 Pitch;font-style:normal;font-weight:normal;font-size:64px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Courier 10 Pitch;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
@@ -160,5 +138,42 @@
            height="459.06976"
            x="439.53488"
            y="640.46515" /></flowRegion><flowPara
-         id="flowPara6006"></flowPara></flowRoot>  </g>
+         id="flowPara6006" /></flowRoot>    <g
+       id="g3018"
+       transform="translate(-211.99998,0)">
+      <text
+         xml:space="preserve"
+         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+         x="409.172"
+         y="723.10638"
+         id="text3006"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3008"
+           x="409.172"
+           y="723.10638">drj@pobox.com</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+         x="405.01202"
+         y="797.05988"
+         id="text3010"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3012"
+           x="405.01202"
+           y="797.05988">@drjtwit</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+         x="407.76401"
+         y="871.01337"
+         id="text3014"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3016"
+           x="407.76401"
+           y="871.01337">github.com/drj11</tspan></text>
+    </g>
+  </g>
 </svg>
